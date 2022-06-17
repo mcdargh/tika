@@ -1,15 +1,5 @@
 # Tika processing container
 
-## Download locations
-
-### pdfbox
-
-<https://pdfbox.apache.org/download.cgi>
-
-### tika
-
-<https://tika.apache.org/download.html>
-
 ## Building
 
 ./build.sh
