@@ -7,7 +7,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends op
 RUN echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | debconf-set-selections \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y  --no-install-recommends xfonts-utils fonts-freefont-ttf fonts-liberation ttf-mscorefonts-installer wget cabextract
 
-COPY tika-app-2.4.0.jar /tika/tika.jar
+COPY tika-app-2.7.0.jar /tika/tika.jar
 COPY tika.sh /tika/tika.sh
 COPY libs/* /tika/libs/
 
