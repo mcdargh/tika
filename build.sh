@@ -1,8 +1,11 @@
 mkdir -p assets 2> /dev/null
 pushd assets
 
+#fail on errors
+set -e 
+
 # get tika
-wget -O tika.jar https://dlcdn.apache.org/tika/2.7.0/tika-app-2.7.0.jar 
+wget -O tika.jar https://dlcdn.apache.org/tika/2.9.2/tika-app-2.9.2.jar 
 chmod +x *.jar
 
 popd
